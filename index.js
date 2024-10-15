@@ -7,7 +7,7 @@
  */
 
 function convertToCelsius(f) {
-  return (f - 32) * (5 / 9);
+  return Math.round((f - 32) * (5 / 9));
 }
 
 /**
@@ -45,7 +45,7 @@ function describeTemperature(f) {
  * @returns {number} a random integer in the range [0, `limit`)
  */
 function getRandomInt(limit) {
-  return Math.round(Math.random() * (limit + 1));
+  return Math.round(Math.random() * limit);
 }
 
 // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
